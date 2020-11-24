@@ -111,6 +111,7 @@
             this.Controls.Add(this.tbxContraseña);
             this.Controls.Add(this.tbxUsuario);
             this.Name = "IngresoAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresoAlumno";
             this.ResumeLayout(false);
             this.PerformLayout();

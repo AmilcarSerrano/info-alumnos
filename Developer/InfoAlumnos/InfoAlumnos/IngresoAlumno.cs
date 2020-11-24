@@ -23,6 +23,9 @@ namespace InfoAlumnos
         private void btnIngresarAlum_Click(object sender, EventArgs e)
         {
             Loggin(tbxUsuario.Text, tbxContraseña.Text);
+
+
+
         }
         public void Loggin(string matricula, string contraseña)
         {
@@ -38,7 +41,10 @@ namespace InfoAlumnos
                 sda.Fill(dt);
                 if (dt.Rows.Count == 1)
                 {
-                  //  MessageBox.Show("Bienvenido");
+                    MenúAlumno MenAlum = new MenúAlumno();
+                    this.Hide();
+                    MenAlum.Show();
+                    MenAlum.txtID.Text = tbxUsuario.Text;
                 }
                 else
                 {

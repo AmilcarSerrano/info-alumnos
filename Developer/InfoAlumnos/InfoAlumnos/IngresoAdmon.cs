@@ -26,7 +26,7 @@ namespace InfoAlumnos
 
             if(user == admon && contraseña == pass)
             {
-                MessageBox.Show("Sos la reata");
+                MessageBox.Show("Bienvenido/a");
             }
             else
             {
