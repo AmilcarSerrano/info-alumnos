@@ -1,0 +1,40 @@
+DROP DATABASE IF EXISTS  escuela;
+CREATE DATABASE IF NOT EXISTS escuela;
+
+Use escuela;
+
+create table Alumnos(
+matricula integer unsigned primary key auto_increment  not null,
+Nombre VARCHAR (15) NOT NULL,
+Apellido_Pat VARCHAR (15) NOT NULL,
+Apellido_Mat VARCHAR (15) default '--', 
+Edad int unsigned not null,
+Direccion VARCHAR (50) NOT NULL,
+Fecha_nacimiento DATE NOT NULL,
+Telefono int NOT NULL,
+Genero ENUM("M","F") NOT NULL,
+Cuatrimestre VARCHAR (16) NOT NULL,
+Contrasena int unsigned 
+);
+
+create table Materia(
+id_materia int unsigned primary key auto_increment  not null,
+Nom_materia VARCHAR (20) NOT NULL,
+Nom_profesor VARCHAR (20) NOT NULL
+);
+
+create table Calificaciones(
+id_materia INT UNSIGNED NOT NULL,
+matricula INT UNSIGNED NOT NULL,
+Calificacion INT NOT NULL default 0,
+FOREIGN key (matricula) REFERENCES Alumnos(matricula),
+FOREIGN KEY (id_materia) REFERENCES Materia(id_materia)
+);
+
+create table Pagos(
+id_Adeudos int unsigned primary key auto_increment NOT NULL,
+matricula INT UNSIGNED NOT NULL,
+FOREIGN KEY (matricula) REFERENCES Alumnos(matricula),
+Mes VARCHAR (10) NOT NULL,
+Cantidad int NOT NULL
+);
