@@ -38,3 +38,4 @@ FOREIGN KEY (matricula) REFERENCES Alumnos(matricula),
 Mes VARCHAR (10) NOT NULL,
 Cantidad int NOT NULL
 );
+-
