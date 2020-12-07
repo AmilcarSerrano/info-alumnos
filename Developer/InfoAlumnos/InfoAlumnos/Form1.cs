@@ -26,15 +26,14 @@ namespace InfoAlumnos
             if (rdbAdmin.Checked)
             {
                 this.Hide();
-                InAdmn.ShowDialog();
-                this.Show();
-
+                InAdmn.Show();
+                
 
             }
             else if (rdbAlumno.Checked)
             {
                 this.Hide();
-                InAlum.ShowDialog();
+                InAlum.Show();
                
 
             }

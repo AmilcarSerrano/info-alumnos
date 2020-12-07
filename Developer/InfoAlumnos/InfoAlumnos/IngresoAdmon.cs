@@ -24,9 +24,14 @@ namespace InfoAlumnos
             int user = int.Parse(tbxUsuario.Text);
             string contraseña = tbxContraseña.Text;
 
-            if(user == admon && contraseña == pass)
+            if (user == admon && contraseña == pass)
             {
-                MessageBox.Show("Bienvenido/a");
+
+                AdmnSelect admnSelect = new AdmnSelect();
+                this.Hide();
+                admnSelect.Show();
+                
+
             }
             else
             {

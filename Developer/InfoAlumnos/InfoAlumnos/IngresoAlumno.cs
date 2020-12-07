@@ -71,8 +71,8 @@ namespace InfoAlumnos
         {
             RegistroAlum RegAlum = new RegistroAlum();
             this.Hide();
-            RegAlum.ShowDialog();
-            this.Hide();
+            RegAlum.Show();
+            
         }
     }
 }

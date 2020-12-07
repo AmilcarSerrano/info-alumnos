@@ -50,7 +50,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar.Designer.cs">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarAlumno.Designer.cs">
+      <DependentUpon>ActualizarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCalificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCalificacion.Designer.cs">
+      <DependentUpon>ActualizarCalificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarMateria.Designer.cs">
+      <DependentUpon>ActualizarMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPago.Designer.cs">
+      <DependentUpon>ActualizarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmnSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmnSelect.Designer.cs">
+      <DependentUpon>AdmnSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarAlumno.Designer.cs">
+      <DependentUpon>BuscarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexión.cs" />
+    <Compile Include="Eliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar.Designer.cs">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAlumno.Designer.cs">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCalificación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCalificación.Designer.cs">
+      <DependentUpon>EliminarCalificación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarMateria.Designer.cs">
+      <DependentUpon>EliminarMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarPago.Designer.cs">
+      <DependentUpon>EliminarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +149,78 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar.Designer.cs">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroAlum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroAlum.Designer.cs">
       <DependentUpon>RegistroAlum.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAlumno.Designer.cs">
+      <DependentUpon>RegistroAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroCalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroCalificaciones.Designer.cs">
+      <DependentUpon>RegistroCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroMateria.Designer.cs">
+      <DependentUpon>RegistroMateria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPago.Designer.cs">
+      <DependentUpon>RegistroPago.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarAlumno.resx">
+      <DependentUpon>ActualizarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarCalificacion.resx">
+      <DependentUpon>ActualizarCalificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarMateria.resx">
+      <DependentUpon>ActualizarMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarPago.resx">
+      <DependentUpon>ActualizarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmnSelect.resx">
+      <DependentUpon>AdmnSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarAlumno.resx">
+      <DependentUpon>BuscarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar.resx">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAlumno.resx">
+      <DependentUpon>EliminarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCalificación.resx">
+      <DependentUpon>EliminarCalificación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarMateria.resx">
+      <DependentUpon>EliminarMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarPago.resx">
+      <DependentUpon>EliminarPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,8 +243,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registrar.resx">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroAlum.resx">
       <DependentUpon>RegistroAlum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAlumno.resx">
+      <DependentUpon>RegistroAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroCalificaciones.resx">
+      <DependentUpon>RegistroCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroMateria.resx">
+      <DependentUpon>RegistroMateria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPago.resx">
+      <DependentUpon>RegistroPago.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
