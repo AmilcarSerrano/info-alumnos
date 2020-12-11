@@ -708,5 +708,15 @@ namespace InfoAlumnos
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEdad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -66,6 +66,33 @@
             this.panel1.Size = new System.Drawing.Size(101, 255);
             this.panel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(0, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 84);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Por favor, sé muy\r\ncuidadoso y antes\r\nde hacer un registro\r\nverifica que los \r\nda" +
+    "tos sean \r\ncorrectos.\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(-1, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 39);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Estás por registrar\r\na un nuevo \r\nalumno.\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -87,33 +114,6 @@
             this.label1.Size = new System.Drawing.Size(116, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Nuevo Alumno!";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(-1, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 39);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Estás por registrar\r\na un nuevo \r\nalumno.\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(0, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 84);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Por favor, sé muy\r\ncuidadoso y antes\r\nde hacer un registro\r\nverifica que los \r\nda" +
-    "tos sean \r\ncorrectos.\r\n";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
             // 
@@ -262,7 +262,7 @@
             // 
             // btnRegistrarAl
             // 
-            this.btnRegistrarAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnRegistrarAl.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistrarAl.Location = new System.Drawing.Point(394, 125);
             this.btnRegistrarAl.Name = "btnRegistrarAl";
             this.btnRegistrarAl.Size = new System.Drawing.Size(68, 45);
@@ -275,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(464, 255);
             this.Controls.Add(this.btnRegistrarAl);
             this.Controls.Add(this.txtGenero);
@@ -297,7 +298,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RegistroAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroAlumno";
+            this.Load += new System.EventHandler(this.RegistroAlumno_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

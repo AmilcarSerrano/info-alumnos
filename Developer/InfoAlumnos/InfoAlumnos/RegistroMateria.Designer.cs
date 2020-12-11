@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtNMateriaR = new System.Windows.Forms.TextBox();
             this.txtNProfesorR = new System.Windows.Forms.TextBox();
             this.btnRegistrarMateria = new System.Windows.Forms.Button();
@@ -50,6 +50,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(94, 191);
             this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(12, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Profesor";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(3, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 38);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nombre de\r\nla Materia";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
             // 
@@ -73,31 +98,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "¡Nueva Materia!";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(3, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 38);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre de\r\nla Materia";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(12, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Profesor";
-            // 
             // txtNMateriaR
             // 
             this.txtNMateriaR.Location = new System.Drawing.Point(102, 78);
@@ -114,7 +114,7 @@
             // 
             // btnRegistrarMateria
             // 
-            this.btnRegistrarMateria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnRegistrarMateria.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistrarMateria.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRegistrarMateria.Location = new System.Drawing.Point(140, 150);
             this.btnRegistrarMateria.Name = "btnRegistrarMateria";
@@ -128,6 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(243, 191);
             this.Controls.Add(this.btnRegistrarMateria);
             this.Controls.Add(this.txtNProfesorR);
@@ -135,7 +136,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RegistroMateria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroMateria";
+            this.Load += new System.EventHandler(this.RegistroMateria_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

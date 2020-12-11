@@ -55,13 +55,16 @@
             // 
             // tbxContraseña
             // 
+            this.tbxContraseña.BackColor = System.Drawing.Color.Silver;
             this.tbxContraseña.Location = new System.Drawing.Point(103, 89);
             this.tbxContraseña.Name = "tbxContraseña";
+            this.tbxContraseña.PasswordChar = '*';
             this.tbxContraseña.Size = new System.Drawing.Size(107, 20);
             this.tbxContraseña.TabIndex = 5;
             // 
             // tbxUsuario
             // 
+            this.tbxUsuario.BackColor = System.Drawing.Color.Silver;
             this.tbxUsuario.Location = new System.Drawing.Point(103, 39);
             this.tbxUsuario.Name = "tbxUsuario";
             this.tbxUsuario.Size = new System.Drawing.Size(107, 20);
@@ -69,18 +72,20 @@
             // 
             // btnIngresarAdmn
             // 
+            this.btnIngresarAdmn.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnIngresarAdmn.Location = new System.Drawing.Point(94, 126);
             this.btnIngresarAdmn.Name = "btnIngresarAdmn";
             this.btnIngresarAdmn.Size = new System.Drawing.Size(89, 24);
             this.btnIngresarAdmn.TabIndex = 8;
             this.btnIngresarAdmn.Text = "Ingresar";
-            this.btnIngresarAdmn.UseVisualStyleBackColor = true;
+            this.btnIngresarAdmn.UseVisualStyleBackColor = false;
             this.btnIngresarAdmn.Click += new System.EventHandler(this.btnIngresarAdmn_Click);
             // 
             // IngresoAdmon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(262, 162);
             this.Controls.Add(this.btnIngresarAdmn);
             this.Controls.Add(this.label2);
@@ -88,6 +93,7 @@
             this.Controls.Add(this.tbxContraseña);
             this.Controls.Add(this.tbxUsuario);
             this.Name = "IngresoAdmon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresoAdmon";
             this.ResumeLayout(false);
             this.PerformLayout();

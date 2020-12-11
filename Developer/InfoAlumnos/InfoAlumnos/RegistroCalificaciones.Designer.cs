@@ -81,7 +81,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(3, 116);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 19);
@@ -93,19 +93,20 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.ForeColor = System.Drawing.Color.Lime;
             this.label3.Location = new System.Drawing.Point(-4, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "Calificación";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
             this.label2.Location = new System.Drawing.Point(3, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 19);
@@ -114,12 +115,13 @@
             // 
             // btnRegistrarPago
             // 
+            this.btnRegistrarPago.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistrarPago.Location = new System.Drawing.Point(129, 184);
             this.btnRegistrarPago.Name = "btnRegistrarPago";
             this.btnRegistrarPago.Size = new System.Drawing.Size(76, 40);
             this.btnRegistrarPago.TabIndex = 6;
             this.btnRegistrarPago.Text = "Calificar";
-            this.btnRegistrarPago.UseVisualStyleBackColor = true;
+            this.btnRegistrarPago.UseVisualStyleBackColor = false;
             this.btnRegistrarPago.Click += new System.EventHandler(this.btnRegistrarPago_Click);
             // 
             // txtMatricula
@@ -147,6 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(248, 236);
             this.Controls.Add(this.txtCalificacion);
             this.Controls.Add(this.txtIdMateria);
@@ -155,6 +158,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RegistroCalificaciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroCalificaciones";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

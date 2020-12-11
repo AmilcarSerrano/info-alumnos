@@ -54,12 +54,13 @@
             // 
             // btnEliminarPA
             // 
+            this.btnEliminarPA.BackColor = System.Drawing.Color.Yellow;
             this.btnEliminarPA.Location = new System.Drawing.Point(64, 151);
             this.btnEliminarPA.Name = "btnEliminarPA";
             this.btnEliminarPA.Size = new System.Drawing.Size(65, 27);
             this.btnEliminarPA.TabIndex = 9;
             this.btnEliminarPA.Text = "Eliminar";
-            this.btnEliminarPA.UseVisualStyleBackColor = true;
+            this.btnEliminarPA.UseVisualStyleBackColor = false;
             this.btnEliminarPA.Click += new System.EventHandler(this.btnEliminarPA_Click);
             // 
             // panel1
@@ -85,13 +86,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(192, 181);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEliminarPA);
             this.Controls.Add(this.panel1);
             this.Name = "EliminarPago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarPago";
+            this.Load += new System.EventHandler(this.EliminarPago_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

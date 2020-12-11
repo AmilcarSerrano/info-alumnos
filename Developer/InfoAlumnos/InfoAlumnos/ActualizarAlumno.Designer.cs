@@ -98,27 +98,27 @@
             this.txtIDC = new System.Windows.Forms.TextBox();
             this.btnActCuatrimestre = new System.Windows.Forms.Button();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtIDTotal = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtNombreT = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtApellidoPT = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtApellidoMT = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtEdadT = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtTelefonoT = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtGeneroT = new System.Windows.Forms.TextBox();
+            this.btnActTodo = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtDireccionT = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtFechaNacimT = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.txtCuatrimestreT = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.txtDireccionT = new System.Windows.Forms.TextBox();
-            this.btnActTodo = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtGeneroT = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtTelefonoT = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtEdadT = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtApellidoMT = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtApellidoPT = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtNombreT = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtIDTotal = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tabControlPrincipalA.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -348,14 +348,14 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(183, 307);
+            this.tabPage1.Size = new System.Drawing.Size(240, 286);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -370,6 +370,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.txtNNombre);
@@ -378,10 +379,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(183, 307);
+            this.tabPage2.Size = new System.Drawing.Size(240, 286);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -405,6 +405,7 @@
             // 
             // txtNNombre
             // 
+            this.txtNNombre.BackColor = System.Drawing.Color.Black;
             this.txtNNombre.Location = new System.Drawing.Point(49, 134);
             this.txtNNombre.Name = "txtNNombre";
             this.txtNNombre.Size = new System.Drawing.Size(100, 20);
@@ -412,6 +413,8 @@
             // 
             // txtID
             // 
+            this.txtID.BackColor = System.Drawing.Color.Black;
+            this.txtID.ForeColor = System.Drawing.Color.White;
             this.txtID.Location = new System.Drawing.Point(49, 91);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
@@ -419,16 +422,19 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(58, 190);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Actualizar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.txtApellidoP);
@@ -437,10 +443,9 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(183, 307);
+            this.tabPage3.Size = new System.Drawing.Size(240, 286);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -464,6 +469,7 @@
             // 
             // txtApellidoP
             // 
+            this.txtApellidoP.BackColor = System.Drawing.Color.Black;
             this.txtApellidoP.Location = new System.Drawing.Point(48, 134);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(100, 20);
@@ -471,6 +477,7 @@
             // 
             // txtIDAP
             // 
+            this.txtIDAP.BackColor = System.Drawing.Color.Black;
             this.txtIDAP.Location = new System.Drawing.Point(48, 91);
             this.txtIDAP.Name = "txtIDAP";
             this.txtIDAP.Size = new System.Drawing.Size(100, 20);
@@ -478,16 +485,19 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Location = new System.Drawing.Point(57, 190);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 23);
             this.button2.TabIndex = 13;
             this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.label8);
             this.tabPage4.Controls.Add(this.txtApellidoM);
@@ -496,10 +506,9 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(183, 307);
+            this.tabPage4.Size = new System.Drawing.Size(240, 286);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -523,6 +532,7 @@
             // 
             // txtApellidoM
             // 
+            this.txtApellidoM.BackColor = System.Drawing.Color.Black;
             this.txtApellidoM.Location = new System.Drawing.Point(45, 134);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(100, 20);
@@ -530,6 +540,7 @@
             // 
             // txtIDAM
             // 
+            this.txtIDAM.BackColor = System.Drawing.Color.Black;
             this.txtIDAM.Location = new System.Drawing.Point(45, 91);
             this.txtIDAM.Name = "txtIDAM";
             this.txtIDAM.Size = new System.Drawing.Size(100, 20);
@@ -537,16 +548,19 @@
             // 
             // btnActAM
             // 
+            this.btnActAM.BackColor = System.Drawing.Color.Black;
+            this.btnActAM.ForeColor = System.Drawing.Color.Blue;
             this.btnActAM.Location = new System.Drawing.Point(54, 190);
             this.btnActAM.Name = "btnActAM";
             this.btnActAM.Size = new System.Drawing.Size(82, 23);
             this.btnActAM.TabIndex = 18;
             this.btnActAM.Text = "Actualizar";
-            this.btnActAM.UseVisualStyleBackColor = true;
+            this.btnActAM.UseVisualStyleBackColor = false;
             this.btnActAM.Click += new System.EventHandler(this.btnActAM_Click);
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage5.Controls.Add(this.label9);
             this.tabPage5.Controls.Add(this.label10);
             this.tabPage5.Controls.Add(this.txtEdad);
@@ -555,10 +569,9 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(183, 307);
+            this.tabPage5.Size = new System.Drawing.Size(240, 286);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -582,6 +595,7 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.BackColor = System.Drawing.Color.Black;
             this.txtEdad.Location = new System.Drawing.Point(45, 134);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(100, 20);
@@ -589,6 +603,7 @@
             // 
             // txtIDEDAD
             // 
+            this.txtIDEDAD.BackColor = System.Drawing.Color.Black;
             this.txtIDEDAD.Location = new System.Drawing.Point(45, 91);
             this.txtIDEDAD.Name = "txtIDEDAD";
             this.txtIDEDAD.Size = new System.Drawing.Size(100, 20);
@@ -596,16 +611,19 @@
             // 
             // btnEdad
             // 
+            this.btnEdad.BackColor = System.Drawing.Color.Black;
+            this.btnEdad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnEdad.Location = new System.Drawing.Point(54, 190);
             this.btnEdad.Name = "btnEdad";
             this.btnEdad.Size = new System.Drawing.Size(82, 23);
             this.btnEdad.TabIndex = 23;
             this.btnEdad.Text = "Actualizar";
-            this.btnEdad.UseVisualStyleBackColor = true;
+            this.btnEdad.UseVisualStyleBackColor = false;
             this.btnEdad.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabPage6
             // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage6.Controls.Add(this.label11);
             this.tabPage6.Controls.Add(this.label12);
             this.tabPage6.Controls.Add(this.txtDireccion);
@@ -614,10 +632,9 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(240, 307);
+            this.tabPage6.Size = new System.Drawing.Size(240, 286);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -641,6 +658,7 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.BackColor = System.Drawing.Color.Black;
             this.txtDireccion.Location = new System.Drawing.Point(44, 134);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
@@ -649,6 +667,7 @@
             // 
             // txtIDD
             // 
+            this.txtIDD.BackColor = System.Drawing.Color.Black;
             this.txtIDD.Location = new System.Drawing.Point(44, 91);
             this.txtIDD.Name = "txtIDD";
             this.txtIDD.Size = new System.Drawing.Size(100, 20);
@@ -656,16 +675,19 @@
             // 
             // btnActDireccion
             // 
+            this.btnActDireccion.BackColor = System.Drawing.Color.Black;
+            this.btnActDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActDireccion.Location = new System.Drawing.Point(53, 190);
             this.btnActDireccion.Name = "btnActDireccion";
             this.btnActDireccion.Size = new System.Drawing.Size(82, 23);
             this.btnActDireccion.TabIndex = 28;
             this.btnActDireccion.Text = "Actualizar";
-            this.btnActDireccion.UseVisualStyleBackColor = true;
+            this.btnActDireccion.UseVisualStyleBackColor = false;
             this.btnActDireccion.Click += new System.EventHandler(this.btnActDireccion_Click);
             // 
             // tabPage7
             // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage7.Controls.Add(this.label13);
             this.tabPage7.Controls.Add(this.label14);
             this.tabPage7.Controls.Add(this.txtFechaNacim);
@@ -674,10 +696,9 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(183, 307);
+            this.tabPage7.Size = new System.Drawing.Size(240, 286);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -701,6 +722,7 @@
             // 
             // txtFechaNacim
             // 
+            this.txtFechaNacim.BackColor = System.Drawing.Color.Black;
             this.txtFechaNacim.Location = new System.Drawing.Point(45, 134);
             this.txtFechaNacim.Name = "txtFechaNacim";
             this.txtFechaNacim.Size = new System.Drawing.Size(100, 20);
@@ -708,6 +730,7 @@
             // 
             // txtIDFN
             // 
+            this.txtIDFN.BackColor = System.Drawing.Color.Black;
             this.txtIDFN.Location = new System.Drawing.Point(45, 91);
             this.txtIDFN.Name = "txtIDFN";
             this.txtIDFN.Size = new System.Drawing.Size(100, 20);
@@ -715,16 +738,19 @@
             // 
             // btnActFechaNacim
             // 
+            this.btnActFechaNacim.BackColor = System.Drawing.Color.Black;
+            this.btnActFechaNacim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActFechaNacim.Location = new System.Drawing.Point(54, 190);
             this.btnActFechaNacim.Name = "btnActFechaNacim";
             this.btnActFechaNacim.Size = new System.Drawing.Size(82, 23);
             this.btnActFechaNacim.TabIndex = 28;
             this.btnActFechaNacim.Text = "Actualizar";
-            this.btnActFechaNacim.UseVisualStyleBackColor = true;
+            this.btnActFechaNacim.UseVisualStyleBackColor = false;
             this.btnActFechaNacim.Click += new System.EventHandler(this.btnActFechaNacim_Click);
             // 
             // tabPage8
             // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage8.Controls.Add(this.label15);
             this.tabPage8.Controls.Add(this.label16);
             this.tabPage8.Controls.Add(this.txtTelefono);
@@ -733,10 +759,9 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(183, 307);
+            this.tabPage8.Size = new System.Drawing.Size(240, 286);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -760,6 +785,7 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.BackColor = System.Drawing.Color.Black;
             this.txtTelefono.Location = new System.Drawing.Point(48, 134);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
@@ -767,6 +793,7 @@
             // 
             // txtIDTel
             // 
+            this.txtIDTel.BackColor = System.Drawing.Color.Black;
             this.txtIDTel.Location = new System.Drawing.Point(48, 91);
             this.txtIDTel.Name = "txtIDTel";
             this.txtIDTel.Size = new System.Drawing.Size(100, 20);
@@ -774,16 +801,19 @@
             // 
             // btnActTelefono
             // 
+            this.btnActTelefono.BackColor = System.Drawing.Color.Black;
+            this.btnActTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActTelefono.Location = new System.Drawing.Point(57, 190);
             this.btnActTelefono.Name = "btnActTelefono";
             this.btnActTelefono.Size = new System.Drawing.Size(82, 23);
             this.btnActTelefono.TabIndex = 33;
             this.btnActTelefono.Text = "Actualizar";
-            this.btnActTelefono.UseVisualStyleBackColor = true;
+            this.btnActTelefono.UseVisualStyleBackColor = false;
             this.btnActTelefono.Click += new System.EventHandler(this.btnActTelefono_Click);
             // 
             // tabPage9
             // 
+            this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage9.Controls.Add(this.label17);
             this.tabPage9.Controls.Add(this.label18);
             this.tabPage9.Controls.Add(this.txtGenero);
@@ -795,7 +825,6 @@
             this.tabPage9.Size = new System.Drawing.Size(240, 286);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "tabPage9";
-            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -819,6 +848,8 @@
             // 
             // txtGenero
             // 
+            this.txtGenero.BackColor = System.Drawing.Color.Black;
+            this.txtGenero.ForeColor = System.Drawing.Color.White;
             this.txtGenero.Location = new System.Drawing.Point(45, 134);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(100, 20);
@@ -826,6 +857,7 @@
             // 
             // txtIDG
             // 
+            this.txtIDG.BackColor = System.Drawing.Color.Black;
             this.txtIDG.Location = new System.Drawing.Point(45, 91);
             this.txtIDG.Name = "txtIDG";
             this.txtIDG.Size = new System.Drawing.Size(100, 20);
@@ -833,16 +865,19 @@
             // 
             // btnActGenero
             // 
+            this.btnActGenero.BackColor = System.Drawing.Color.Black;
+            this.btnActGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActGenero.Location = new System.Drawing.Point(54, 190);
             this.btnActGenero.Name = "btnActGenero";
             this.btnActGenero.Size = new System.Drawing.Size(82, 23);
             this.btnActGenero.TabIndex = 38;
             this.btnActGenero.Text = "Actualizar";
-            this.btnActGenero.UseVisualStyleBackColor = true;
+            this.btnActGenero.UseVisualStyleBackColor = false;
             this.btnActGenero.Click += new System.EventHandler(this.btnActGenero_Click);
             // 
             // tabPage10
             // 
+            this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage10.Controls.Add(this.label19);
             this.tabPage10.Controls.Add(this.label20);
             this.tabPage10.Controls.Add(this.txtCuatrimestre);
@@ -854,7 +889,6 @@
             this.tabPage10.Size = new System.Drawing.Size(240, 286);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "tabPage10";
-            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
@@ -878,6 +912,8 @@
             // 
             // txtCuatrimestre
             // 
+            this.txtCuatrimestre.BackColor = System.Drawing.Color.Black;
+            this.txtCuatrimestre.ForeColor = System.Drawing.Color.White;
             this.txtCuatrimestre.Location = new System.Drawing.Point(70, 144);
             this.txtCuatrimestre.Name = "txtCuatrimestre";
             this.txtCuatrimestre.Size = new System.Drawing.Size(100, 20);
@@ -885,6 +921,8 @@
             // 
             // txtIDC
             // 
+            this.txtIDC.BackColor = System.Drawing.Color.Black;
+            this.txtIDC.ForeColor = System.Drawing.Color.White;
             this.txtIDC.Location = new System.Drawing.Point(70, 101);
             this.txtIDC.Name = "txtIDC";
             this.txtIDC.Size = new System.Drawing.Size(100, 20);
@@ -892,16 +930,19 @@
             // 
             // btnActCuatrimestre
             // 
+            this.btnActCuatrimestre.BackColor = System.Drawing.Color.Black;
+            this.btnActCuatrimestre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActCuatrimestre.Location = new System.Drawing.Point(79, 200);
             this.btnActCuatrimestre.Name = "btnActCuatrimestre";
             this.btnActCuatrimestre.Size = new System.Drawing.Size(82, 23);
             this.btnActCuatrimestre.TabIndex = 43;
             this.btnActCuatrimestre.Text = "Actualizar";
-            this.btnActCuatrimestre.UseVisualStyleBackColor = true;
+            this.btnActCuatrimestre.UseVisualStyleBackColor = false;
             this.btnActCuatrimestre.Click += new System.EventHandler(this.btnActCuatrimestre_Click);
             // 
             // tabPage11
             // 
+            this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.tabPage11.Controls.Add(this.btnActTodo);
             this.tabPage11.Controls.Add(this.label30);
             this.tabPage11.Controls.Add(this.txtDireccionT);
@@ -929,126 +970,37 @@
             this.tabPage11.Size = new System.Drawing.Size(240, 286);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // label21
+            // btnActTodo
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(72, 3);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(107, 13);
-            this.label21.TabIndex = 48;
-            this.label21.Text = "Matrícula del Alumno";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnActTodo.BackColor = System.Drawing.Color.Black;
+            this.btnActTodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnActTodo.Location = new System.Drawing.Point(131, 215);
+            this.btnActTodo.Name = "btnActTodo";
+            this.btnActTodo.Size = new System.Drawing.Size(99, 45);
+            this.btnActTodo.TabIndex = 67;
+            this.btnActTodo.Text = "Actualizar\r\nDatos";
+            this.btnActTodo.UseVisualStyleBackColor = false;
+            this.btnActTodo.Click += new System.EventHandler(this.btnActTodo_Click);
             // 
-            // txtIDTotal
+            // label30
             // 
-            this.txtIDTotal.Location = new System.Drawing.Point(75, 19);
-            this.txtIDTotal.Name = "txtIDTotal";
-            this.txtIDTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtIDTotal.TabIndex = 47;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(31, 205);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(52, 13);
+            this.label30.TabIndex = 66;
+            this.label30.Text = "Dirección";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label22
+            // txtDireccionT
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(39, 52);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 13);
-            this.label22.TabIndex = 50;
-            this.label22.Text = "Nombre";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtNombreT
-            // 
-            this.txtNombreT.Location = new System.Drawing.Point(9, 68);
-            this.txtNombreT.Name = "txtNombreT";
-            this.txtNombreT.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreT.TabIndex = 49;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(25, 88);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(84, 13);
-            this.label23.TabIndex = 52;
-            this.label23.Text = "Apellido Paterno";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtApellidoPT
-            // 
-            this.txtApellidoPT.Location = new System.Drawing.Point(9, 104);
-            this.txtApellidoPT.Name = "txtApellidoPT";
-            this.txtApellidoPT.Size = new System.Drawing.Size(100, 20);
-            this.txtApellidoPT.TabIndex = 51;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(23, 127);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(86, 13);
-            this.label24.TabIndex = 54;
-            this.label24.Text = "Apellido Materno";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtApellidoMT
-            // 
-            this.txtApellidoMT.Location = new System.Drawing.Point(9, 143);
-            this.txtApellidoMT.Name = "txtApellidoMT";
-            this.txtApellidoMT.Size = new System.Drawing.Size(100, 20);
-            this.txtApellidoMT.TabIndex = 53;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(39, 166);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(32, 13);
-            this.label25.TabIndex = 56;
-            this.label25.Text = "Edad";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtEdadT
-            // 
-            this.txtEdadT.Location = new System.Drawing.Point(9, 182);
-            this.txtEdadT.Name = "txtEdadT";
-            this.txtEdadT.Size = new System.Drawing.Size(100, 20);
-            this.txtEdadT.TabIndex = 55;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(153, 52);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(49, 13);
-            this.label26.TabIndex = 58;
-            this.label26.Text = "Teléfono";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtTelefonoT
-            // 
-            this.txtTelefonoT.Location = new System.Drawing.Point(130, 68);
-            this.txtTelefonoT.Name = "txtTelefonoT";
-            this.txtTelefonoT.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefonoT.TabIndex = 57;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(160, 88);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 13);
-            this.label27.TabIndex = 60;
-            this.label27.Text = "Género";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtGeneroT
-            // 
-            this.txtGeneroT.Location = new System.Drawing.Point(130, 104);
-            this.txtGeneroT.Name = "txtGeneroT";
-            this.txtGeneroT.Size = new System.Drawing.Size(100, 20);
-            this.txtGeneroT.TabIndex = 59;
+            this.txtDireccionT.BackColor = System.Drawing.Color.Black;
+            this.txtDireccionT.Location = new System.Drawing.Point(9, 221);
+            this.txtDireccionT.Multiline = true;
+            this.txtDireccionT.Name = "txtDireccionT";
+            this.txtDireccionT.Size = new System.Drawing.Size(100, 39);
+            this.txtDireccionT.TabIndex = 65;
             // 
             // label28
             // 
@@ -1062,6 +1014,7 @@
             // 
             // txtFechaNacimT
             // 
+            this.txtFechaNacimT.BackColor = System.Drawing.Color.Black;
             this.txtFechaNacimT.Location = new System.Drawing.Point(130, 179);
             this.txtFechaNacimT.Name = "txtFechaNacimT";
             this.txtFechaNacimT.Size = new System.Drawing.Size(100, 20);
@@ -1079,38 +1032,137 @@
             // 
             // txtCuatrimestreT
             // 
+            this.txtCuatrimestreT.BackColor = System.Drawing.Color.Black;
             this.txtCuatrimestreT.Location = new System.Drawing.Point(130, 143);
             this.txtCuatrimestreT.Name = "txtCuatrimestreT";
             this.txtCuatrimestreT.Size = new System.Drawing.Size(100, 20);
             this.txtCuatrimestreT.TabIndex = 61;
             // 
-            // label30
+            // label27
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(31, 205);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(52, 13);
-            this.label30.TabIndex = 66;
-            this.label30.Text = "Dirección";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(160, 88);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(42, 13);
+            this.label27.TabIndex = 60;
+            this.label27.Text = "Género";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtDireccionT
+            // txtGeneroT
             // 
-            this.txtDireccionT.Location = new System.Drawing.Point(9, 221);
-            this.txtDireccionT.Multiline = true;
-            this.txtDireccionT.Name = "txtDireccionT";
-            this.txtDireccionT.Size = new System.Drawing.Size(100, 39);
-            this.txtDireccionT.TabIndex = 65;
+            this.txtGeneroT.BackColor = System.Drawing.Color.Black;
+            this.txtGeneroT.Location = new System.Drawing.Point(130, 104);
+            this.txtGeneroT.Name = "txtGeneroT";
+            this.txtGeneroT.Size = new System.Drawing.Size(100, 20);
+            this.txtGeneroT.TabIndex = 59;
             // 
-            // btnActTodo
+            // label26
             // 
-            this.btnActTodo.Location = new System.Drawing.Point(131, 215);
-            this.btnActTodo.Name = "btnActTodo";
-            this.btnActTodo.Size = new System.Drawing.Size(99, 45);
-            this.btnActTodo.TabIndex = 67;
-            this.btnActTodo.Text = "Actualizar\r\nDatos";
-            this.btnActTodo.UseVisualStyleBackColor = true;
-            this.btnActTodo.Click += new System.EventHandler(this.btnActTodo_Click);
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(153, 52);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(49, 13);
+            this.label26.TabIndex = 58;
+            this.label26.Text = "Teléfono";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtTelefonoT
+            // 
+            this.txtTelefonoT.BackColor = System.Drawing.Color.Black;
+            this.txtTelefonoT.Location = new System.Drawing.Point(130, 68);
+            this.txtTelefonoT.Name = "txtTelefonoT";
+            this.txtTelefonoT.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefonoT.TabIndex = 57;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(39, 166);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(32, 13);
+            this.label25.TabIndex = 56;
+            this.label25.Text = "Edad";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtEdadT
+            // 
+            this.txtEdadT.BackColor = System.Drawing.Color.Black;
+            this.txtEdadT.Location = new System.Drawing.Point(9, 182);
+            this.txtEdadT.Name = "txtEdadT";
+            this.txtEdadT.Size = new System.Drawing.Size(100, 20);
+            this.txtEdadT.TabIndex = 55;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(23, 127);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(86, 13);
+            this.label24.TabIndex = 54;
+            this.label24.Text = "Apellido Materno";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtApellidoMT
+            // 
+            this.txtApellidoMT.BackColor = System.Drawing.Color.Black;
+            this.txtApellidoMT.Location = new System.Drawing.Point(9, 143);
+            this.txtApellidoMT.Name = "txtApellidoMT";
+            this.txtApellidoMT.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidoMT.TabIndex = 53;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(25, 88);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(84, 13);
+            this.label23.TabIndex = 52;
+            this.label23.Text = "Apellido Paterno";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtApellidoPT
+            // 
+            this.txtApellidoPT.BackColor = System.Drawing.Color.Black;
+            this.txtApellidoPT.Location = new System.Drawing.Point(9, 104);
+            this.txtApellidoPT.Name = "txtApellidoPT";
+            this.txtApellidoPT.Size = new System.Drawing.Size(100, 20);
+            this.txtApellidoPT.TabIndex = 51;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(39, 52);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(44, 13);
+            this.label22.TabIndex = 50;
+            this.label22.Text = "Nombre";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtNombreT
+            // 
+            this.txtNombreT.BackColor = System.Drawing.Color.Black;
+            this.txtNombreT.Location = new System.Drawing.Point(9, 68);
+            this.txtNombreT.Name = "txtNombreT";
+            this.txtNombreT.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreT.TabIndex = 49;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(72, 3);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(107, 13);
+            this.label21.TabIndex = 48;
+            this.label21.Text = "Matrícula del Alumno";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtIDTotal
+            // 
+            this.txtIDTotal.BackColor = System.Drawing.Color.Black;
+            this.txtIDTotal.Location = new System.Drawing.Point(75, 19);
+            this.txtIDTotal.Name = "txtIDTotal";
+            this.txtIDTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtIDTotal.TabIndex = 47;
             // 
             // ActualizarAlumno
             // 
@@ -1120,7 +1172,9 @@
             this.Controls.Add(this.tabControlPrincipalA);
             this.Controls.Add(this.panel1);
             this.Name = "ActualizarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarAlumno";
+            this.Load += new System.EventHandler(this.ActualizarAlumno_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControlPrincipalA.ResumeLayout(false);

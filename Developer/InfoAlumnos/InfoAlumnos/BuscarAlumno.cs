@@ -68,5 +68,10 @@ namespace InfoAlumnos
                 connect.Close();
             }
         }
+
+        private void BuscarAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

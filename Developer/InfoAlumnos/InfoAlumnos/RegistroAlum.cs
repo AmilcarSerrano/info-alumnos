@@ -56,5 +56,10 @@ namespace InfoAlumnos
             IngresoAlumno ingreso = new IngresoAlumno();
             ingreso.Show();
         }
+
+        private void RegistroAlum_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

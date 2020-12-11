@@ -388,5 +388,10 @@ namespace InfoAlumnos
                 connect.Close();
             }
         }
+
+        private void ActualizarAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

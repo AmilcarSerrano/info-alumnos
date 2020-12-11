@@ -74,5 +74,10 @@ namespace InfoAlumnos
             RegAlum.Show();
             
         }
+
+        private void IngresoAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

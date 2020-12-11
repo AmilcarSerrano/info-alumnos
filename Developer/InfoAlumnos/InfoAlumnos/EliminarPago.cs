@@ -45,5 +45,10 @@ namespace InfoAlumnos
                 connect.Close();
             }
         }
+
+        private void EliminarPago_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,5 +44,12 @@ namespace InfoAlumnos
            
             buscarAlumno.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
 }

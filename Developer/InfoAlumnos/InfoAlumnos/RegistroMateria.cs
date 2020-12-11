@@ -48,5 +48,10 @@ namespace InfoAlumnos
             }
 
         }
+
+        private void RegistroMateria_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

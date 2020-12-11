@@ -56,12 +56,13 @@
             // 
             // btnEliminarAl
             // 
+            this.btnEliminarAl.BackColor = System.Drawing.Color.Yellow;
             this.btnEliminarAl.Location = new System.Drawing.Point(64, 148);
             this.btnEliminarAl.Name = "btnEliminarAl";
             this.btnEliminarAl.Size = new System.Drawing.Size(65, 27);
             this.btnEliminarAl.TabIndex = 5;
             this.btnEliminarAl.Text = "Eliminar";
-            this.btnEliminarAl.UseVisualStyleBackColor = true;
+            this.btnEliminarAl.UseVisualStyleBackColor = false;
             this.btnEliminarAl.Click += new System.EventHandler(this.btnEliminarAl_Click);
             // 
             // panel1
@@ -88,12 +89,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(192, 181);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnEliminarAl);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "EliminarMateria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarMateria";
             this.Load += new System.EventHandler(this.EliminarMateria_Load);
             this.panel1.ResumeLayout(false);

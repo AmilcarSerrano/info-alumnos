@@ -366,5 +366,10 @@ namespace InfoAlumnos
                 connect4.Close();
             }
         }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

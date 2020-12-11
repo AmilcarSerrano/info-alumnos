@@ -112,6 +112,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.BackColor = System.Drawing.Color.Silver;
             this.txtNombre.Location = new System.Drawing.Point(39, 25);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
@@ -121,6 +122,7 @@
             // 
             // txtApellidoPat
             // 
+            this.txtApellidoPat.BackColor = System.Drawing.Color.Silver;
             this.txtApellidoPat.Location = new System.Drawing.Point(39, 84);
             this.txtApellidoPat.Name = "txtApellidoPat";
             this.txtApellidoPat.ReadOnly = true;
@@ -130,15 +132,18 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.BackColor = System.Drawing.Color.Silver;
             this.txtEdad.Location = new System.Drawing.Point(39, 136);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.ReadOnly = true;
             this.txtEdad.Size = new System.Drawing.Size(133, 20);
             this.txtEdad.TabIndex = 3;
             this.txtEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEdad.TextChanged += new System.EventHandler(this.txtEdad_TextChanged);
             // 
             // txtFNacimiento
             // 
+            this.txtFNacimiento.BackColor = System.Drawing.Color.Silver;
             this.txtFNacimiento.Location = new System.Drawing.Point(39, 191);
             this.txtFNacimiento.Name = "txtFNacimiento";
             this.txtFNacimiento.ReadOnly = true;
@@ -148,6 +153,7 @@
             // 
             // txtDirecccion
             // 
+            this.txtDirecccion.BackColor = System.Drawing.Color.Silver;
             this.txtDirecccion.Location = new System.Drawing.Point(226, 178);
             this.txtDirecccion.Multiline = true;
             this.txtDirecccion.Name = "txtDirecccion";
@@ -158,6 +164,7 @@
             // 
             // txtCuatrimestre
             // 
+            this.txtCuatrimestre.BackColor = System.Drawing.Color.Silver;
             this.txtCuatrimestre.Location = new System.Drawing.Point(226, 136);
             this.txtCuatrimestre.Name = "txtCuatrimestre";
             this.txtCuatrimestre.ReadOnly = true;
@@ -167,6 +174,7 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.BackColor = System.Drawing.Color.Silver;
             this.txtTelefono.Location = new System.Drawing.Point(226, 84);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.ReadOnly = true;
@@ -176,6 +184,7 @@
             // 
             // txtGenero
             // 
+            this.txtGenero.BackColor = System.Drawing.Color.Silver;
             this.txtGenero.Location = new System.Drawing.Point(226, 25);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.ReadOnly = true;
@@ -257,6 +266,7 @@
             // 
             // txtApellidoMat
             // 
+            this.txtApellidoMat.BackColor = System.Drawing.Color.Silver;
             this.txtApellidoMat.Location = new System.Drawing.Point(109, 84);
             this.txtApellidoMat.Name = "txtApellidoMat";
             this.txtApellidoMat.ReadOnly = true;
@@ -279,6 +289,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Cyan;
             this.tabPage1.Controls.Add(this.txtGenero);
             this.tabPage1.Controls.Add(this.txtNombre);
             this.tabPage1.Controls.Add(this.txtApellidoMat);
@@ -299,10 +310,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(392, 223);
+            this.tabPage1.Size = new System.Drawing.Size(392, 242);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -445,7 +456,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(392, 223);
+            this.tabPage3.Size = new System.Drawing.Size(392, 242);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -571,7 +582,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(392, 223);
+            this.tabPage4.Size = new System.Drawing.Size(392, 242);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -707,14 +718,14 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(392, 223);
+            this.tabPage5.Size = new System.Drawing.Size(392, 242);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.radioButton5);
             this.panel1.Controls.Add(this.rdbMaterias);
             this.panel1.Controls.Add(this.rdbPagos);
@@ -816,7 +827,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InfoAlumnos.Properties.Resources.WhatsApp_Image_2020_11_17_at_8_01_00_PM;
+            this.pictureBox1.Image = global::InfoAlumnos.Properties.Resources.images;
             this.pictureBox1.Location = new System.Drawing.Point(21, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 148);
@@ -840,7 +851,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Yellow;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.txtID);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;

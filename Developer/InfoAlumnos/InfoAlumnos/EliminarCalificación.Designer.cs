@@ -56,12 +56,13 @@
             // 
             // btnEliminarCal
             // 
+            this.btnEliminarCal.BackColor = System.Drawing.Color.Yellow;
             this.btnEliminarCal.Location = new System.Drawing.Point(66, 142);
             this.btnEliminarCal.Name = "btnEliminarCal";
             this.btnEliminarCal.Size = new System.Drawing.Size(65, 27);
             this.btnEliminarCal.TabIndex = 9;
             this.btnEliminarCal.Text = "Eliminar";
-            this.btnEliminarCal.UseVisualStyleBackColor = true;
+            this.btnEliminarCal.UseVisualStyleBackColor = false;
             this.btnEliminarCal.Click += new System.EventHandler(this.btnEliminarCal_Click);
             // 
             // panel1
@@ -103,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(192, 181);
             this.Controls.Add(this.txtIDM);
             this.Controls.Add(this.label3);
@@ -111,6 +113,7 @@
             this.Controls.Add(this.btnEliminarCal);
             this.Controls.Add(this.panel1);
             this.Name = "EliminarCalificación";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarCalificación";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

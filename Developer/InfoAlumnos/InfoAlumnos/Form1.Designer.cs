@@ -57,24 +57,28 @@
             // 
             // BtnContinuar
             // 
+            this.BtnContinuar.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnContinuar.Location = new System.Drawing.Point(55, 117);
             this.BtnContinuar.Name = "BtnContinuar";
             this.BtnContinuar.Size = new System.Drawing.Size(70, 23);
             this.BtnContinuar.TabIndex = 2;
             this.BtnContinuar.Text = "Continuar";
-            this.BtnContinuar.UseVisualStyleBackColor = true;
+            this.BtnContinuar.UseVisualStyleBackColor = false;
             this.BtnContinuar.Click += new System.EventHandler(this.BtnContinuar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(245, 174);
             this.Controls.Add(this.BtnContinuar);
             this.Controls.Add(this.rdbAlumno);
             this.Controls.Add(this.rdbAdmin);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,6 +39,7 @@
             // 
             // tbxUsuario
             // 
+            this.tbxUsuario.BackColor = System.Drawing.Color.Silver;
             this.tbxUsuario.Location = new System.Drawing.Point(97, 32);
             this.tbxUsuario.Name = "tbxUsuario";
             this.tbxUsuario.Size = new System.Drawing.Size(107, 20);
@@ -46,8 +47,10 @@
             // 
             // tbxContraseña
             // 
+            this.tbxContraseña.BackColor = System.Drawing.Color.Silver;
             this.tbxContraseña.Location = new System.Drawing.Point(98, 64);
             this.tbxContraseña.Name = "tbxContraseña";
+            this.tbxContraseña.PasswordChar = '*';
             this.tbxContraseña.Size = new System.Drawing.Size(107, 20);
             this.tbxContraseña.TabIndex = 1;
             // 
@@ -71,12 +74,13 @@
             // 
             // btnIngresarAlum
             // 
+            this.btnIngresarAlum.BackColor = System.Drawing.Color.Silver;
             this.btnIngresarAlum.Location = new System.Drawing.Point(98, 90);
             this.btnIngresarAlum.Name = "btnIngresarAlum";
             this.btnIngresarAlum.Size = new System.Drawing.Size(89, 24);
             this.btnIngresarAlum.TabIndex = 4;
             this.btnIngresarAlum.Text = "Ingresar";
-            this.btnIngresarAlum.UseVisualStyleBackColor = true;
+            this.btnIngresarAlum.UseVisualStyleBackColor = false;
             this.btnIngresarAlum.Click += new System.EventHandler(this.btnIngresarAlum_Click);
             // 
             // label3
@@ -90,18 +94,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.Location = new System.Drawing.Point(152, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 24);
             this.button1.TabIndex = 6;
             this.button1.Text = "!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // IngresoAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(265, 165);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -113,6 +119,7 @@
             this.Name = "IngresoAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresoAlumno";
+            this.Load += new System.EventHandler(this.IngresoAlumno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

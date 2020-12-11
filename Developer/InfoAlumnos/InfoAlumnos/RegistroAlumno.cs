@@ -63,5 +63,10 @@ namespace InfoAlumnos
             }
 
         }
+
+        private void RegistroAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

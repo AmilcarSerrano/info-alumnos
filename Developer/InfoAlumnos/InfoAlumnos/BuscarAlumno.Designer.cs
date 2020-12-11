@@ -230,12 +230,13 @@
             // 
             // btnBuscarAlumno
             // 
+            this.btnBuscarAlumno.BackColor = System.Drawing.Color.Fuchsia;
             this.btnBuscarAlumno.Location = new System.Drawing.Point(423, 23);
             this.btnBuscarAlumno.Name = "btnBuscarAlumno";
             this.btnBuscarAlumno.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarAlumno.TabIndex = 4;
             this.btnBuscarAlumno.Text = "Buscar";
-            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
+            this.btnBuscarAlumno.UseVisualStyleBackColor = false;
             this.btnBuscarAlumno.Click += new System.EventHandler(this.btnBuscarAlumno_Click);
             // 
             // txtApellidoMB
@@ -311,6 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Fuchsia;
             this.ClientSize = new System.Drawing.Size(552, 300);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtIDAlumno);
@@ -333,7 +335,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "BuscarAlumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarAlumno";
+            this.Load += new System.EventHandler(this.BuscarAlumno_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

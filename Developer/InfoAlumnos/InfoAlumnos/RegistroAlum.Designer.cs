@@ -39,12 +39,13 @@
             // 
             // btnRegAlum
             // 
+            this.btnRegAlum.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnRegAlum.Location = new System.Drawing.Point(128, 136);
             this.btnRegAlum.Name = "btnRegAlum";
             this.btnRegAlum.Size = new System.Drawing.Size(89, 24);
             this.btnRegAlum.TabIndex = 8;
             this.btnRegAlum.Text = "Registrar";
-            this.btnRegAlum.UseVisualStyleBackColor = true;
+            this.btnRegAlum.UseVisualStyleBackColor = false;
             this.btnRegAlum.Click += new System.EventHandler(this.btnRegAlum_Click);
             // 
             // label2
@@ -69,6 +70,7 @@
             // 
             this.tbxContraseña.Location = new System.Drawing.Point(119, 87);
             this.tbxContraseña.Name = "tbxContraseña";
+            this.tbxContraseña.PasswordChar = '*';
             this.tbxContraseña.Size = new System.Drawing.Size(107, 20);
             this.tbxContraseña.TabIndex = 6;
             // 
@@ -83,6 +85,7 @@
             // 
             this.tbxConfirmacion.Location = new System.Drawing.Point(119, 110);
             this.tbxConfirmacion.Name = "tbxConfirmacion";
+            this.tbxConfirmacion.PasswordChar = '*';
             this.tbxConfirmacion.Size = new System.Drawing.Size(107, 20);
             this.tbxConfirmacion.TabIndex = 7;
             // 
@@ -99,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(238, 186);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbxConfirmacion);
@@ -108,7 +112,9 @@
             this.Controls.Add(this.tbxContraseña);
             this.Controls.Add(this.tbxUsuario);
             this.Name = "RegistroAlum";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistroAlum";
+            this.Load += new System.EventHandler(this.RegistroAlum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

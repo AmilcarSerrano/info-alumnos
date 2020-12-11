@@ -61,16 +61,20 @@
             // 
             // btnActualizarCalif
             // 
+            this.btnActualizarCalif.BackColor = System.Drawing.Color.Black;
+            this.btnActualizarCalif.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActualizarCalif.Location = new System.Drawing.Point(41, 183);
             this.btnActualizarCalif.Name = "btnActualizarCalif";
             this.btnActualizarCalif.Size = new System.Drawing.Size(86, 26);
             this.btnActualizarCalif.TabIndex = 1;
             this.btnActualizarCalif.Text = "Actualizar";
-            this.btnActualizarCalif.UseVisualStyleBackColor = true;
+            this.btnActualizarCalif.UseVisualStyleBackColor = false;
             this.btnActualizarCalif.Click += new System.EventHandler(this.btnActualizarCalif_Click);
             // 
             // txtIDMatricula
             // 
+            this.txtIDMatricula.BackColor = System.Drawing.Color.Black;
+            this.txtIDMatricula.ForeColor = System.Drawing.Color.White;
             this.txtIDMatricula.Location = new System.Drawing.Point(41, 79);
             this.txtIDMatricula.Name = "txtIDMatricula";
             this.txtIDMatricula.Size = new System.Drawing.Size(86, 20);
@@ -78,6 +82,7 @@
             // 
             // txtIDMateria
             // 
+            this.txtIDMateria.BackColor = System.Drawing.Color.Black;
             this.txtIDMateria.Location = new System.Drawing.Point(41, 118);
             this.txtIDMateria.Name = "txtIDMateria";
             this.txtIDMateria.Size = new System.Drawing.Size(86, 20);
@@ -112,6 +117,7 @@
             // 
             // txtCalificacion
             // 
+            this.txtCalificacion.BackColor = System.Drawing.Color.Black;
             this.txtCalificacion.Location = new System.Drawing.Point(41, 157);
             this.txtCalificacion.Name = "txtCalificacion";
             this.txtCalificacion.Size = new System.Drawing.Size(86, 20);
@@ -121,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(164, 221);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCalificacion);
@@ -131,6 +138,7 @@
             this.Controls.Add(this.btnActualizarCalif);
             this.Controls.Add(this.panel1);
             this.Name = "ActualizarCalificacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarCalificacion";
             this.Load += new System.EventHandler(this.ActualizarCalificacion_Load);
             this.panel1.ResumeLayout(false);

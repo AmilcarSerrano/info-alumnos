@@ -17,7 +17,7 @@ namespace InfoAlumnos
             string server = "127.0.0.1";
             string database = "escuela";
             string user = "root";
-            string pass = "VdcIPC24";
+            string pass = "";
             try
             {
                 connect = new MySqlConnection("server = " + server +

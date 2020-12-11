@@ -29,12 +29,24 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rdbBuscarPago = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tbxPag4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tbxPag3 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tbxPag2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tbxPag1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnActMotivo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,18 +73,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtMotivoT = new System.Windows.Forms.TextBox();
             this.txtIDPagoT = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.rdbBuscarPago = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tbxPag1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tbxPag2 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tbxPag3 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tbxPag4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,6 +94,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(91, 256);
             this.panel1.TabIndex = 0;
+            // 
+            // rdbBuscarPago
+            // 
+            this.rdbBuscarPago.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbBuscarPago.AutoSize = true;
+            this.rdbBuscarPago.BackColor = System.Drawing.Color.Purple;
+            this.rdbBuscarPago.Checked = true;
+            this.rdbBuscarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbBuscarPago.Location = new System.Drawing.Point(8, 85);
+            this.rdbBuscarPago.Name = "rdbBuscarPago";
+            this.rdbBuscarPago.Size = new System.Drawing.Size(82, 25);
+            this.rdbBuscarPago.TabIndex = 4;
+            this.rdbBuscarPago.TabStop = true;
+            this.rdbBuscarPago.Text = "BuscarPagos";
+            this.rdbBuscarPago.UseVisualStyleBackColor = false;
+            this.rdbBuscarPago.CheckedChanged += new System.EventHandler(this.rdbBuscarPago_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -163,6 +179,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.tbxPag4);
             this.tabPage1.Controls.Add(this.label14);
@@ -180,10 +197,108 @@
             this.tabPage1.Size = new System.Drawing.Size(112, 230);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(35, 190);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(54, 13);
+            this.label15.TabIndex = 16;
+            this.label15.Text = "Diciembre";
+            // 
+            // tbxPag4
+            // 
+            this.tbxPag4.BackColor = System.Drawing.Color.Black;
+            this.tbxPag4.Location = new System.Drawing.Point(14, 206);
+            this.tbxPag4.Name = "tbxPag4";
+            this.tbxPag4.Size = new System.Drawing.Size(87, 20);
+            this.tbxPag4.TabIndex = 15;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(29, 151);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Noviembre";
+            // 
+            // tbxPag3
+            // 
+            this.tbxPag3.BackColor = System.Drawing.Color.Black;
+            this.tbxPag3.Location = new System.Drawing.Point(14, 167);
+            this.tbxPag3.Name = "tbxPag3";
+            this.tbxPag3.Size = new System.Drawing.Size(87, 20);
+            this.tbxPag3.TabIndex = 13;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(42, 112);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Octubre";
+            // 
+            // tbxPag2
+            // 
+            this.tbxPag2.BackColor = System.Drawing.Color.Black;
+            this.tbxPag2.Location = new System.Drawing.Point(14, 128);
+            this.tbxPag2.Name = "tbxPag2";
+            this.tbxPag2.Size = new System.Drawing.Size(87, 20);
+            this.tbxPag2.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(29, 73);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 13);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Septiembre";
+            // 
+            // tbxPag1
+            // 
+            this.tbxPag1.BackColor = System.Drawing.Color.Black;
+            this.tbxPag1.ForeColor = System.Drawing.Color.White;
+            this.tbxPag1.Location = new System.Drawing.Point(14, 89);
+            this.tbxPag1.Name = "tbxPag1";
+            this.tbxPag1.Size = new System.Drawing.Size(87, 20);
+            this.tbxPag1.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(2, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(107, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Matrícula del Alumno";
+            // 
+            // txtID
+            // 
+            this.txtID.BackColor = System.Drawing.Color.Black;
+            this.txtID.Location = new System.Drawing.Point(14, 19);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(87, 20);
+            this.txtID.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(32, 45);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(56, 25);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Buscar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tabPage2.Controls.Add(this.btnActMotivo);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
@@ -195,16 +310,17 @@
             this.tabPage2.Size = new System.Drawing.Size(112, 230);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnActMotivo
             // 
+            this.btnActMotivo.BackColor = System.Drawing.Color.Black;
+            this.btnActMotivo.ForeColor = System.Drawing.Color.White;
             this.btnActMotivo.Location = new System.Drawing.Point(27, 134);
             this.btnActMotivo.Name = "btnActMotivo";
             this.btnActMotivo.Size = new System.Drawing.Size(66, 37);
             this.btnActMotivo.TabIndex = 9;
             this.btnActMotivo.Text = "Actualizar";
-            this.btnActMotivo.UseVisualStyleBackColor = true;
+            this.btnActMotivo.UseVisualStyleBackColor = false;
             this.btnActMotivo.Click += new System.EventHandler(this.btnActMotivo_Click);
             // 
             // label4
@@ -227,6 +343,7 @@
             // 
             // txtMotivo
             // 
+            this.txtMotivo.BackColor = System.Drawing.Color.Black;
             this.txtMotivo.Location = new System.Drawing.Point(8, 88);
             this.txtMotivo.Name = "txtMotivo";
             this.txtMotivo.Size = new System.Drawing.Size(100, 20);
@@ -234,6 +351,7 @@
             // 
             // txtIDPago
             // 
+            this.txtIDPago.BackColor = System.Drawing.Color.Black;
             this.txtIDPago.Location = new System.Drawing.Point(8, 30);
             this.txtIDPago.Name = "txtIDPago";
             this.txtIDPago.Size = new System.Drawing.Size(100, 20);
@@ -241,6 +359,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.txtDebia);
             this.tabPage3.Controls.Add(this.label9);
@@ -255,20 +374,21 @@
             this.tabPage3.Size = new System.Drawing.Size(112, 230);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
             this.button1.Location = new System.Drawing.Point(80, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 19);
             this.button1.TabIndex = 17;
             this.button1.Text = "?";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtDebia
             // 
+            this.txtDebia.BackColor = System.Drawing.Color.Black;
             this.txtDebia.Location = new System.Drawing.Point(5, 70);
             this.txtDebia.Name = "txtDebia";
             this.txtDebia.Size = new System.Drawing.Size(70, 20);
@@ -285,12 +405,14 @@
             // 
             // btnActualizarCantidad
             // 
+            this.btnActualizarCantidad.BackColor = System.Drawing.Color.Black;
+            this.btnActualizarCantidad.ForeColor = System.Drawing.Color.White;
             this.btnActualizarCantidad.Location = new System.Drawing.Point(26, 172);
             this.btnActualizarCantidad.Name = "btnActualizarCantidad";
             this.btnActualizarCantidad.Size = new System.Drawing.Size(66, 37);
             this.btnActualizarCantidad.TabIndex = 14;
             this.btnActualizarCantidad.Text = "Actualizar";
-            this.btnActualizarCantidad.UseVisualStyleBackColor = true;
+            this.btnActualizarCantidad.UseVisualStyleBackColor = false;
             this.btnActualizarCantidad.Click += new System.EventHandler(this.btnActualizarCantidad_Click);
             // 
             // label2
@@ -313,6 +435,7 @@
             // 
             // txtCantidadAct
             // 
+            this.txtCantidadAct.BackColor = System.Drawing.Color.Black;
             this.txtCantidadAct.Location = new System.Drawing.Point(5, 132);
             this.txtCantidadAct.Name = "txtCantidadAct";
             this.txtCantidadAct.Size = new System.Drawing.Size(100, 20);
@@ -320,6 +443,7 @@
             // 
             // txtIDPago2
             // 
+            this.txtIDPago2.BackColor = System.Drawing.Color.Black;
             this.txtIDPago2.Location = new System.Drawing.Point(6, 19);
             this.txtIDPago2.Name = "txtIDPago2";
             this.txtIDPago2.Size = new System.Drawing.Size(100, 20);
@@ -327,6 +451,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.textBox1);
             this.tabPage4.Controls.Add(this.label10);
@@ -343,20 +468,22 @@
             this.tabPage4.Size = new System.Drawing.Size(112, 230);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.Location = new System.Drawing.Point(78, 117);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 19);
             this.button2.TabIndex = 20;
             this.button2.Text = "?";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(3, 116);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(70, 20);
@@ -382,6 +509,7 @@
             // 
             // txtCantidadActT
             // 
+            this.txtCantidadActT.BackColor = System.Drawing.Color.Black;
             this.txtCantidadActT.Location = new System.Drawing.Point(3, 162);
             this.txtCantidadActT.Name = "txtCantidadActT";
             this.txtCantidadActT.Size = new System.Drawing.Size(100, 20);
@@ -389,12 +517,14 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(21, 188);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(66, 37);
             this.button3.TabIndex = 14;
             this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label6
@@ -417,6 +547,7 @@
             // 
             // txtMotivoT
             // 
+            this.txtMotivoT.BackColor = System.Drawing.Color.Black;
             this.txtMotivoT.Location = new System.Drawing.Point(4, 62);
             this.txtMotivoT.Name = "txtMotivoT";
             this.txtMotivoT.Size = new System.Drawing.Size(100, 20);
@@ -424,116 +555,11 @@
             // 
             // txtIDPagoT
             // 
+            this.txtIDPagoT.BackColor = System.Drawing.Color.Black;
             this.txtIDPagoT.Location = new System.Drawing.Point(4, 19);
             this.txtIDPagoT.Name = "txtIDPagoT";
             this.txtIDPagoT.Size = new System.Drawing.Size(100, 20);
             this.txtIDPagoT.TabIndex = 10;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(32, 45);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 25);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Buscar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(14, 19);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(87, 20);
-            this.txtID.TabIndex = 1;
-            // 
-            // rdbBuscarPago
-            // 
-            this.rdbBuscarPago.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbBuscarPago.AutoSize = true;
-            this.rdbBuscarPago.BackColor = System.Drawing.Color.Purple;
-            this.rdbBuscarPago.Checked = true;
-            this.rdbBuscarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdbBuscarPago.Location = new System.Drawing.Point(8, 85);
-            this.rdbBuscarPago.Name = "rdbBuscarPago";
-            this.rdbBuscarPago.Size = new System.Drawing.Size(82, 25);
-            this.rdbBuscarPago.TabIndex = 4;
-            this.rdbBuscarPago.TabStop = true;
-            this.rdbBuscarPago.Text = "BuscarPagos";
-            this.rdbBuscarPago.UseVisualStyleBackColor = false;
-            this.rdbBuscarPago.CheckedChanged += new System.EventHandler(this.rdbBuscarPago_CheckedChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(2, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 13);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Matrícula del Alumno";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(29, 73);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 13);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Septiembre";
-            // 
-            // tbxPag1
-            // 
-            this.tbxPag1.Location = new System.Drawing.Point(14, 89);
-            this.tbxPag1.Name = "tbxPag1";
-            this.tbxPag1.Size = new System.Drawing.Size(87, 20);
-            this.tbxPag1.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(42, 112);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Octubre";
-            // 
-            // tbxPag2
-            // 
-            this.tbxPag2.Location = new System.Drawing.Point(14, 128);
-            this.tbxPag2.Name = "tbxPag2";
-            this.tbxPag2.Size = new System.Drawing.Size(87, 20);
-            this.tbxPag2.TabIndex = 11;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(29, 151);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 13);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "Noviembre";
-            // 
-            // tbxPag3
-            // 
-            this.tbxPag3.Location = new System.Drawing.Point(14, 167);
-            this.tbxPag3.Name = "tbxPag3";
-            this.tbxPag3.Size = new System.Drawing.Size(87, 20);
-            this.tbxPag3.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(35, 190);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 13);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Diciembre";
-            // 
-            // tbxPag4
-            // 
-            this.tbxPag4.Location = new System.Drawing.Point(14, 206);
-            this.tbxPag4.Name = "tbxPag4";
-            this.tbxPag4.Size = new System.Drawing.Size(87, 20);
-            this.tbxPag4.TabIndex = 15;
             // 
             // ActualizarPago
             // 
@@ -543,6 +569,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Name = "ActualizarPago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarPago";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

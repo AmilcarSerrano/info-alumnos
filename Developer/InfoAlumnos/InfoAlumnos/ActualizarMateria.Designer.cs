@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rdbTodo = new System.Windows.Forms.RadioButton();
+            this.rdbNProfesor = new System.Windows.Forms.RadioButton();
+            this.rdbNMateria = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rdbNMateria = new System.Windows.Forms.RadioButton();
-            this.rdbNProfesor = new System.Windows.Forms.RadioButton();
-            this.rdbTodo = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnActNomMateria = new System.Windows.Forms.Button();
-            this.txtIDM = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtMateria = new System.Windows.Forms.TextBox();
+            this.txtIDM = new System.Windows.Forms.TextBox();
+            this.btnActNomMateria = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtProfesor = new System.Windows.Forms.TextBox();
             this.txtIDMP = new System.Windows.Forms.TextBox();
             this.btnActNomProf = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtMateriaT = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtProfesorT = new System.Windows.Forms.TextBox();
             this.txtIDMT = new System.Windows.Forms.TextBox();
             this.btnActTodo = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtMateriaT = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -77,69 +77,21 @@
             this.panel1.Size = new System.Drawing.Size(90, 248);
             this.panel1.TabIndex = 0;
             // 
-            // tabControl1
+            // rdbTodo
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(90, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(196, 248);
-            this.tabControl1.TabIndex = 1;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(188, 222);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.txtMateria);
-            this.tabPage2.Controls.Add(this.txtIDM);
-            this.tabPage2.Controls.Add(this.btnActNomMateria);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(188, 222);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "¿Qué desea\r\nactualizar de\r\nla materia?";
-            // 
-            // rdbNMateria
-            // 
-            this.rdbNMateria.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbNMateria.AutoSize = true;
-            this.rdbNMateria.BackColor = System.Drawing.Color.Purple;
-            this.rdbNMateria.FlatAppearance.BorderSize = 0;
-            this.rdbNMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdbNMateria.Location = new System.Drawing.Point(7, 123);
-            this.rdbNMateria.Name = "rdbNMateria";
-            this.rdbNMateria.Size = new System.Drawing.Size(80, 23);
-            this.rdbNMateria.TabIndex = 1;
-            this.rdbNMateria.TabStop = true;
-            this.rdbNMateria.Text = "Nom. Materia";
-            this.rdbNMateria.UseVisualStyleBackColor = false;
-            this.rdbNMateria.CheckedChanged += new System.EventHandler(this.rdbNMateria_CheckedChanged);
+            this.rdbTodo.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbTodo.AutoSize = true;
+            this.rdbTodo.BackColor = System.Drawing.Color.Purple;
+            this.rdbTodo.FlatAppearance.BorderSize = 0;
+            this.rdbTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbTodo.Location = new System.Drawing.Point(15, 201);
+            this.rdbTodo.Name = "rdbTodo";
+            this.rdbTodo.Size = new System.Drawing.Size(48, 23);
+            this.rdbTodo.TabIndex = 3;
+            this.rdbTodo.TabStop = true;
+            this.rdbTodo.Text = "TODO";
+            this.rdbTodo.UseVisualStyleBackColor = false;
+            this.rdbTodo.CheckedChanged += new System.EventHandler(this.rdbTodo_CheckedChanged);
             // 
             // rdbNProfesor
             // 
@@ -157,21 +109,54 @@
             this.rdbNProfesor.UseVisualStyleBackColor = false;
             this.rdbNProfesor.CheckedChanged += new System.EventHandler(this.rdbNProfesor_CheckedChanged);
             // 
-            // rdbTodo
+            // rdbNMateria
             // 
-            this.rdbTodo.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdbTodo.AutoSize = true;
-            this.rdbTodo.BackColor = System.Drawing.Color.Purple;
-            this.rdbTodo.FlatAppearance.BorderSize = 0;
-            this.rdbTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdbTodo.Location = new System.Drawing.Point(15, 201);
-            this.rdbTodo.Name = "rdbTodo";
-            this.rdbTodo.Size = new System.Drawing.Size(48, 23);
-            this.rdbTodo.TabIndex = 3;
-            this.rdbTodo.TabStop = true;
-            this.rdbTodo.Text = "TODO";
-            this.rdbTodo.UseVisualStyleBackColor = false;
-            this.rdbTodo.CheckedChanged += new System.EventHandler(this.rdbTodo_CheckedChanged);
+            this.rdbNMateria.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdbNMateria.AutoSize = true;
+            this.rdbNMateria.BackColor = System.Drawing.Color.Purple;
+            this.rdbNMateria.FlatAppearance.BorderSize = 0;
+            this.rdbNMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbNMateria.Location = new System.Drawing.Point(7, 123);
+            this.rdbNMateria.Name = "rdbNMateria";
+            this.rdbNMateria.Size = new System.Drawing.Size(80, 23);
+            this.rdbNMateria.TabIndex = 1;
+            this.rdbNMateria.TabStop = true;
+            this.rdbNMateria.Text = "Nom. Materia";
+            this.rdbNMateria.UseVisualStyleBackColor = false;
+            this.rdbNMateria.CheckedChanged += new System.EventHandler(this.rdbNMateria_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "¿Qué desea\r\nactualizar de\r\nla materia?";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(90, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(196, 248);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(188, 222);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
             // 
             // label2
             // 
@@ -182,8 +167,70 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Elija una Opción...";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage2.Controls.Add(this.txtMateria);
+            this.tabPage2.Controls.Add(this.txtIDM);
+            this.tabPage2.Controls.Add(this.btnActNomMateria);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(188, 222);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            // 
+            // txtMateria
+            // 
+            this.txtMateria.BackColor = System.Drawing.Color.Black;
+            this.txtMateria.Location = new System.Drawing.Point(48, 110);
+            this.txtMateria.Name = "txtMateria";
+            this.txtMateria.Size = new System.Drawing.Size(97, 20);
+            this.txtMateria.TabIndex = 8;
+            // 
+            // txtIDM
+            // 
+            this.txtIDM.BackColor = System.Drawing.Color.Black;
+            this.txtIDM.Location = new System.Drawing.Point(48, 71);
+            this.txtIDM.Name = "txtIDM";
+            this.txtIDM.Size = new System.Drawing.Size(97, 20);
+            this.txtIDM.TabIndex = 7;
+            // 
+            // btnActNomMateria
+            // 
+            this.btnActNomMateria.BackColor = System.Drawing.Color.Black;
+            this.btnActNomMateria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnActNomMateria.Location = new System.Drawing.Point(48, 141);
+            this.btnActNomMateria.Name = "btnActNomMateria";
+            this.btnActNomMateria.Size = new System.Drawing.Size(97, 24);
+            this.btnActNomMateria.TabIndex = 6;
+            this.btnActNomMateria.Text = "Actualizar";
+            this.btnActNomMateria.UseVisualStyleBackColor = false;
+            this.btnActNomMateria.Click += new System.EventHandler(this.btnActNomMateria_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(45, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Materia Actualizada";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(56, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Id de la materia";
+            // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tabPage3.Controls.Add(this.txtProfesor);
             this.tabPage3.Controls.Add(this.txtIDMP);
             this.tabPage3.Controls.Add(this.btnActNomProf);
@@ -195,69 +242,10 @@
             this.tabPage3.Size = new System.Drawing.Size(188, 222);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.txtMateriaT);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.txtProfesorT);
-            this.tabPage4.Controls.Add(this.txtIDMT);
-            this.tabPage4.Controls.Add(this.btnActTodo);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(188, 222);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Id de la materia";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Materia Actualizada";
-            // 
-            // btnActNomMateria
-            // 
-            this.btnActNomMateria.Location = new System.Drawing.Point(48, 141);
-            this.btnActNomMateria.Name = "btnActNomMateria";
-            this.btnActNomMateria.Size = new System.Drawing.Size(97, 24);
-            this.btnActNomMateria.TabIndex = 6;
-            this.btnActNomMateria.Text = "Actualizar";
-            this.btnActNomMateria.UseVisualStyleBackColor = true;
-            this.btnActNomMateria.Click += new System.EventHandler(this.btnActNomMateria_Click);
-            // 
-            // txtIDM
-            // 
-            this.txtIDM.Location = new System.Drawing.Point(48, 71);
-            this.txtIDM.Name = "txtIDM";
-            this.txtIDM.Size = new System.Drawing.Size(97, 20);
-            this.txtIDM.TabIndex = 7;
-            // 
-            // txtMateria
-            // 
-            this.txtMateria.Location = new System.Drawing.Point(48, 110);
-            this.txtMateria.Name = "txtMateria";
-            this.txtMateria.Size = new System.Drawing.Size(97, 20);
-            this.txtMateria.TabIndex = 8;
             // 
             // txtProfesor
             // 
+            this.txtProfesor.BackColor = System.Drawing.Color.Black;
             this.txtProfesor.Location = new System.Drawing.Point(46, 109);
             this.txtProfesor.Name = "txtProfesor";
             this.txtProfesor.Size = new System.Drawing.Size(97, 20);
@@ -265,6 +253,7 @@
             // 
             // txtIDMP
             // 
+            this.txtIDMP.BackColor = System.Drawing.Color.Black;
             this.txtIDMP.Location = new System.Drawing.Point(46, 70);
             this.txtIDMP.Name = "txtIDMP";
             this.txtIDMP.Size = new System.Drawing.Size(97, 20);
@@ -272,12 +261,14 @@
             // 
             // btnActNomProf
             // 
+            this.btnActNomProf.BackColor = System.Drawing.Color.Black;
+            this.btnActNomProf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActNomProf.Location = new System.Drawing.Point(46, 140);
             this.btnActNomProf.Name = "btnActNomProf";
             this.btnActNomProf.Size = new System.Drawing.Size(97, 24);
             this.btnActNomProf.TabIndex = 11;
             this.btnActNomProf.Text = "Actualizar";
-            this.btnActNomProf.UseVisualStyleBackColor = true;
+            this.btnActNomProf.UseVisualStyleBackColor = false;
             this.btnActNomProf.Click += new System.EventHandler(this.btnActNomProf_Click);
             // 
             // label5
@@ -298,8 +289,44 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Id de la materia";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage4.Controls.Add(this.txtMateriaT);
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.txtProfesorT);
+            this.tabPage4.Controls.Add(this.txtIDMT);
+            this.tabPage4.Controls.Add(this.btnActTodo);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.ForeColor = System.Drawing.Color.Black;
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(188, 222);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            // 
+            // txtMateriaT
+            // 
+            this.txtMateriaT.BackColor = System.Drawing.Color.Black;
+            this.txtMateriaT.Location = new System.Drawing.Point(46, 105);
+            this.txtMateriaT.Name = "txtMateriaT";
+            this.txtMateriaT.Size = new System.Drawing.Size(97, 20);
+            this.txtMateriaT.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(43, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Materia Actualizada";
+            // 
             // txtProfesorT
             // 
+            this.txtProfesorT.BackColor = System.Drawing.Color.Black;
             this.txtProfesorT.Location = new System.Drawing.Point(46, 143);
             this.txtProfesorT.Name = "txtProfesorT";
             this.txtProfesorT.Size = new System.Drawing.Size(97, 20);
@@ -307,6 +334,7 @@
             // 
             // txtIDMT
             // 
+            this.txtIDMT.BackColor = System.Drawing.Color.Black;
             this.txtIDMT.Location = new System.Drawing.Point(46, 55);
             this.txtIDMT.Name = "txtIDMT";
             this.txtIDMT.Size = new System.Drawing.Size(97, 20);
@@ -314,12 +342,14 @@
             // 
             // btnActTodo
             // 
+            this.btnActTodo.BackColor = System.Drawing.Color.Black;
+            this.btnActTodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnActTodo.Location = new System.Drawing.Point(46, 178);
             this.btnActTodo.Name = "btnActTodo";
             this.btnActTodo.Size = new System.Drawing.Size(97, 24);
             this.btnActTodo.TabIndex = 16;
             this.btnActTodo.Text = "Actualizar";
-            this.btnActTodo.UseVisualStyleBackColor = true;
+            this.btnActTodo.UseVisualStyleBackColor = false;
             this.btnActTodo.Click += new System.EventHandler(this.btnActTodo_Click);
             // 
             // label7
@@ -340,22 +370,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Id de la materia";
             // 
-            // txtMateriaT
-            // 
-            this.txtMateriaT.Location = new System.Drawing.Point(46, 105);
-            this.txtMateriaT.Name = "txtMateriaT";
-            this.txtMateriaT.Size = new System.Drawing.Size(97, 20);
-            this.txtMateriaT.TabIndex = 20;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(43, 89);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Materia Actualizada";
-            // 
             // ActualizarMateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,6 +378,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Name = "ActualizarMateria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarMateria";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
